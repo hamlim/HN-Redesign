@@ -10,11 +10,12 @@ $off-gray: #F8F9FB;
 
 html {
     font: $font-stack;
+    counter-reset: section;
 }
 
 .header {
-    font-weight: bold;
-    text-transform: uppercase;
+    // font-weight: bold;
+    // text-transform: uppercase;
     height: 100px;
     line-height: 100px;
 }
@@ -47,12 +48,52 @@ html {
     }
 }
 
+// Main Styles
+
 .main {
     background-color: $off-gray;
     min-height: 1000px;
 }
 
+.main__section {
+    padding-top: 100px;
+    @include outer-container;
+    .main__article { @include span-columns(9); }
+    .main__aside { @include span-columns(3); }
+}
+
+.main__article {
+    background-color: white;
+}
+.main__aside {
+    background-color: white;
+}
+
+.article__section,
+.aside__section {
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+// Items within Article
+.ul__item {
+    height: 200px;
+    list-style: none;
+    :before {
+        counter-increment: section;
+        content: counter(section);
+
+    }
+}
+
+
+
 // Utility Classes
 .u__clearfix {
     clear: both;
+}
+.u__caps {
+    text-transform: uppercase;
+}
+.u__bold {
+    font-weight: bold;
 }

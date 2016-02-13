@@ -214,11 +214,10 @@ picture {
 
 html {
   font: Helvetica, sans-serif;
+  counter-reset: section;
 }
 
 .header {
-  font-weight: bold;
-  text-transform: uppercase;
   height: 100px;
   line-height: 100px;
 }
@@ -261,6 +260,66 @@ html {
   min-height: 1000px;
 }
 
+.main__section {
+  padding-top: 100px;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main__section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.main__section .main__article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+}
+.main__section .main__article:last-child {
+  margin-right: 0;
+}
+.main__section .main__aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+.main__section .main__aside:last-child {
+  margin-right: 0;
+}
+
+.main__article {
+  background-color: white;
+}
+
+.main__aside {
+  background-color: white;
+}
+
+.article__section,
+.aside__section {
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.ul__item {
+  height: 200px;
+  list-style: none;
+}
+.ul__item :before {
+  counter-increment: section;
+  content: counter(section);
+}
+
 .u__clearfix {
   clear: both;
+}
+
+.u__caps {
+  text-transform: uppercase;
+}
+
+.u__bold {
+  font-weight: bold;
 }
