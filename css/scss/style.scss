@@ -1,0 +1,21 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+
+
+// Variables
+$font-stack:    Helvetica, sans-serif;
+$hn-orange: #ff6600;
+
+html {
+    font: $font-stack;
+}
+
+.header {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header__navLogo {
+    background-color: $hn-orange;
+}
