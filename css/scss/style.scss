@@ -4,7 +4,7 @@
 
 
 // Variables
-$font-stack:    Helvetica, sans-serif;
+$font-stack: Helvetica, sans-serif;
 $hn-orange: #ff6600;
 
 html {
@@ -14,8 +14,13 @@ html {
 .header {
     font-weight: bold;
     text-transform: uppercase;
+    height: 100px;
 }
 
 .header__navLogo {
     background-color: $hn-orange;
+}
+
+.logo {
+    border: solid 1px white;
 }

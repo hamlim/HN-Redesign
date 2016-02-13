@@ -1,0 +1,59 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+
+
+// Variables
+$font-stack: Helvetica, sans-serif;
+$hn-orange: #ff6600;
+$off-gray: #F8F9FB;
+
+html {
+    font: $font-stack;
+}
+
+.header {
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 100px;
+    line-height: 100px;
+}
+.header__navItem {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+.header__navLogo {
+    background-color: $hn-orange;
+}
+
+.logo {
+    border: solid 1px white;
+    padding: 5px 5px 5px 5px;
+    color: white !important;
+}
+.header__nav--left {
+    float: left;
+}
+.header__nav--right {
+    float: right;
+    display: inline-block;
+}
+.header__navLink--nolink {
+    text-decoration: none;
+    color: black;
+    :hover {
+        color: #DDDDDD;
+    }
+}
+
+.main {
+    background-color: $off-gray;
+    min-height: 1000px;
+    
+}
+
+// Utility Classes
+.u__clearfix {
+    clear: both;
+}
