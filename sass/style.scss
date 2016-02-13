@@ -69,22 +69,39 @@ html {
     background-color: white;
 }
 
-.article__section,
+//.article__section,
+
 .aside__section {
     padding: 2rem 2rem 2rem 2rem;
 }
 
 // Items within Article
-.ul__item {
-    height: 200px;
-    list-style: none;
-    :before {
-        counter-increment: section;
-        content: counter(section);
-
+.article__li {
+    width: 100%;
+    height: 100px;
+    border-bottom: $off-gray 1px solid;
+    .li__contents {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
+.li__link--nolink {
+    text-decoration: none;
+    color: black;
+    :hover {
+        color: #DDDDDD;
+    }
+}
+.li__link--nolink:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    font-weight: normal;
+    text-transform: none;
+}
 
 
 // Utility Classes
