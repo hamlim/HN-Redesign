@@ -130,6 +130,48 @@ body {
 .contents__comments {
     cursor: pointer;
 }
+.article__li--end {
+    text-align: center;
+}
+.load-more-btn{
+    background-color: $hn-orange;
+    color: white;
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+// // __________________________________________________
+// // Voting
+// // __________________________________________________
+//
+// .score {
+//     text-align: center;
+//     position: relative;
+//     left: 50%;
+//     transform: translate(-650%, 90%);
+//     font-color: #ff6600;
+//     background-color: black;
+//     display: inline;
+// }
+//
+// .vote {
+//   border: none;
+//   background-color: white;
+//   // width: 47px;
+//   font-size: 20px;
+//   // height: 21.5px;
+//   -webkit-transform: translateZ(0);
+//   transform: translateZ(0);
+//   &:active {
+//     outline: none;
+//     border: none;
+//   }
+//   &:focus {
+//     outline: 0;
+//   }
+// }
+
 
 
 //Aside!

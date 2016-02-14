@@ -1,0 +1,1 @@
+$(document).ready(function(){function n(){t++,o.innerHTML=t,e()}function e(){t>0?o.style.color="#ff6600":o.style.color="#666666"}var o=document.getElementById("scoreCounter");o.innerHTML="0";var t=0;e()});

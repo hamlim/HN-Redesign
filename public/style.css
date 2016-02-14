@@ -341,6 +341,18 @@ body {
   cursor: pointer;
 }
 
+.article__li--end {
+  text-align: center;
+}
+
+.load-more-btn {
+  background-color: #ff6600;
+  color: white;
+  border-radius: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .jobs {
   padding-top: 2rem;
 }
