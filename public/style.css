@@ -212,9 +212,16 @@ picture {
   max-width: 100%;
 }
 
+:root {
+  font-size: 20px;
+}
+
 html {
   font: Helvetica, sans-serif;
-  counter-reset: section;
+}
+
+body {
+  counter-reset: items;
 }
 
 .header {
@@ -328,7 +335,22 @@ html {
   font-size: 0.8em;
   font-weight: normal;
   text-transform: none;
-  font-weight: normal;
+}
+
+.contents__comments {
+  cursor: pointer;
+}
+
+.jobs {
+  padding-top: 2rem;
+}
+
+.jobs__posting {
+  cursor: pointer;
+}
+
+.job__employer {
+  color: #ff6600;
 }
 
 .u__clearfix {
@@ -341,4 +363,8 @@ html {
 
 .u__bold {
   font-weight: bold;
+}
+
+.u__pb1 {
+  padding-bottom: 2rem;
 }

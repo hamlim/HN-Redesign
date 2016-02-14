@@ -8,9 +8,16 @@ $font-stack: Helvetica, sans-serif;
 $hn-orange: #ff6600;
 $off-gray: #F8F9FB;
 
+:root {
+    font-size: 20px;
+}
+
 html {
     font: $font-stack;
-    counter-reset: section;
+}
+
+body {
+    counter-reset: items;
 }
 
 .header {
@@ -89,6 +96,22 @@ html {
     }
 }
 
+// .li__contents {
+//     counter-increment: items;
+// }
+//
+// .li__contents::before {
+//     display: inline-block;
+//     border-radius: 50%;
+//     background-color: $hn-orange;
+//     content: counter(items);
+//     color: white;
+//     width: 1rem;
+//     padding-right: 25px;
+//     // text-align: center;
+//     text-align: right;
+// }
+
 .li__link--nolink {
     text-decoration: none;
     color: black;
@@ -103,6 +126,24 @@ html {
     text-transform: none;
 }
 
+// Contents classes
+.contents__comments {
+    cursor: pointer;
+}
+
+
+//Aside!
+.jobs {
+    padding-top: 2rem;
+}
+.jobs__posting {
+    cursor: pointer;
+}
+.job__employer {
+    color: $hn-orange;
+}
+
+
 
 // Utility Classes
 .u__clearfix {
@@ -113,4 +154,7 @@ html {
 }
 .u__bold {
     font-weight: bold;
+}
+.u__pb1 {
+    padding-bottom: 2rem;
 }
