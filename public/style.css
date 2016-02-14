@@ -269,6 +269,7 @@ body {
 
 .main__section {
   padding-top: 100px;
+  padding-bottom: 100px;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
@@ -351,6 +352,14 @@ body {
   border-radius: 10px;
   padding-left: 2rem;
   padding-right: 2rem;
+  transition: border 2s;
+}
+.load-more-btn:hover {
+  background-color: white;
+  border-color: #ff6600;
+  border: medium solid;
+  border-radius: 10px;
+  color: #ff6600;
 }
 
 .jobs {
