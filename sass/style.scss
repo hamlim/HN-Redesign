@@ -36,8 +36,8 @@ body {
 }
 
 .logo {
-    border: solid 1px white;
-    padding: 5px 5px 5px 5px;
+    border: solid 4px white;
+    padding: 10px 10px 10px 10px;
     color: white !important;
 }
 .header__nav--left {
@@ -51,7 +51,7 @@ body {
     text-decoration: none;
     color: black;
     :hover {
-        color: #DDDDDD;
+        color: $hn-orange;
     }
 }
 
@@ -143,6 +143,39 @@ body {
     color: $hn-orange;
 }
 
+
+//footer
+.footer {
+    height: 200px;
+    background-color: white;
+    // text-align: center;
+}
+
+.footer__links {
+    height: 100px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer__linksWrapper,
+.footer__logo {
+    text-align: center;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__link:hover {
+    color: $hn-orange;
+}
+
+.logo--footer {
+    color: $hn-orange;
+    border: solid 4px $hn-orange;
+    padding: 10px 10px 10px 10px;
+}
 
 
 // Utility Classes

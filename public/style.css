@@ -240,8 +240,8 @@ body {
 }
 
 .logo {
-  border: solid 1px white;
-  padding: 5px 5px 5px 5px;
+  border: solid 4px white;
+  padding: 10px 10px 10px 10px;
   color: white !important;
 }
 
@@ -259,7 +259,7 @@ body {
   color: black;
 }
 .header__navLink--nolink :hover {
-  color: #DDDDDD;
+  color: #ff6600;
 }
 
 .main {
@@ -351,6 +351,37 @@ body {
 
 .job__employer {
   color: #ff6600;
+}
+
+.footer {
+  height: 200px;
+  background-color: white;
+}
+
+.footer__links {
+  height: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer__linksWrapper,
+.footer__logo {
+  text-align: center;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__link:hover {
+  color: #ff6600;
+}
+
+.logo--footer {
+  color: #ff6600;
+  border: solid 4px #ff6600;
+  padding: 10px 10px 10px 10px;
 }
 
 .u__clearfix {
